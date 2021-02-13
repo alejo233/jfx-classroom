@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pain3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="758.0" style="-fx-background-color: #fdf8f8;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tableUser" layoutX="40.0" layoutY="131.0" prefHeight="397.0" prefWidth="694.0">
+        <columns>
+          <TableColumn fx:id="tbcUsername" prefWidth="110.39999008178711" text="Username" />
+          <TableColumn fx:id="tbcGender" prefWidth="84.79998779296875" text="Gender" />
+            <TableColumn fx:id="tbcCareer" prefWidth="174.40005493164062" text="Career" />
+            <TableColumn fx:id="tbcBirthday" prefWidth="173.60003662109375" text="Birthday" />
+            <TableColumn fx:id="tbcBrowser" prefWidth="151.199951171875" text="Browser" />
+        </columns>
+      </TableView>
+      <Label layoutX="308.0" layoutY="84.0" text="User account list">
+         <font>
+            <Font name="Dubai Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbUsername" layoutX="466.0" layoutY="23.0" text="Label" />
+      <ImageView fx:id="imgProfile" fitHeight="61.0" fitWidth="62.0" layoutX="569.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="617.0" layoutY="26.0" mnemonicParsing="false" onAction="#loadLogOut" prefHeight="34.0" prefWidth="117.0" style="-fx-background-color: #0088ff; -fx-background-radius: 9;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
